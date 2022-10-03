@@ -37,7 +37,7 @@ include '../component/sidebar.php'
                                 <input class="form-control" id="jumlah" name="jumlah" aria-describedby="emailHelp">
                             </div>
                             <div class="d-grid gap-2">
-                                <button class="btn btn-primary" type="submit" name="save" >Simpan</button>
+                                <button class="btn btn-primary" type="submit" name="save">Simpan</button>
                             </div>
                         </form>                        
                         </div>

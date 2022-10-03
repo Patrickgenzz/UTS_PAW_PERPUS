@@ -17,7 +17,7 @@ include '../component/sidebar.php'
                     </div>
 
                     <div class="section-body">
-                        <div class="container p-5 m-1 h-100 col-lg-12" style="background-color: #FFFFFF; border-top: 5px solid #97D2EC; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                        <div class="container p-3 m-1 h-100 col-lg-12" style="background-color: #FFFFFF; border-top: 5px solid #97D2EC; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                             <div class="d-flex">
                                 <div class="card mx-4" style="width: 15rem;">
                                     <img class="card-img-top" src="https://pbs.twimg.com/media/FZ5E23CUcAAR37y?format=jpg&name=900x900" width="30px" alt="Card image cap">

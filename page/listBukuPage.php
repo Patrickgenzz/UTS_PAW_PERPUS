@@ -36,7 +36,32 @@ include '../component/sidebar.php'
                                     </tr>
                                 </thead>
                                 <tbody>
-                                
+                                    <?php
+                                        $query = mysqli_query($con, "SELECT * FROM bukus") or
+                                            die(mysqli_error($con));
+                                        if (mysqli_num_rows($query) == 0) {
+                                            echo '<tr> <td colspan="5"> Tidak ada data </td> </tr>';
+                                        } else {
+                                            $no = 1;
+                                            while ($data = mysqli_fetch_assoc($query)) {
+                                                echo '
+                                                        <tr>
+                                                            <th scope="row">' . $no . '</th>
+                                                            <td>' . $data['judul'] . '</td>
+                                                            <td>' . $data['gambar'] . '</td>
+                                                            <td>' . $data['jumlah'] . '</td>
+                                                            <td>
+                                                                <a href="../page/editSeriesPage.php? id=' . $data['id'] . '" onClick="return confirm ( \'Are you sure want to update this data?\')"> <i style="color: green" class="fa fa-pencil-square fa-2x"></i></a>
+                                                            </td>
+                                                            <td>
+                                                                <a href="../process/deleteSeriesProcess.php? id=' . $data['id'] . '" onClick="return confirm ( \'Are you sure want to delete this data?\')"> <i style="color: red" class="fa fa-trash fa-2x"></i></a>
+                                                            </td>
+
+                                                        </tr>';
+                                                $no++;
+                                            }
+                                        }
+                                        ?>
                                 </tbody>
                             </table>  
                         </div>
